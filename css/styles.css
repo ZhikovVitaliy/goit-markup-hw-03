@@ -1,0 +1,221 @@
+/* белый #FFFFFF */
+
+/* первичный фон #E5E5E5 */
+
+/* вторичный фон #F5F4FA */
+
+/* цвет основного текста #757575 */
+
+/* вторичный цвет текста  #212121*/
+
+/* акцент #2196F3 */
+
+/* соцсети серый #AFB1B8 */
+
+/* соцсети футера серый rgba(255, 255, 255, 0.1) */
+
+/* фон иконок приемущества #F5F4FA */
+
+/* цвет текста контактов футера rgba(255, 255, 255, 0.6) */
+
+/* цвет вторичного теста футера rgba(255, 255, 255, 0.4) */
+
+:root {
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --primary-bg-color: #f5f4fa;
+  --secondary-bg-color: #e5e5e5;
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --social-network-color: #afb1b8;
+  --social-network-footer-color: rgba(255, 255, 255, 0.1);
+  --icon-bg-color: #f5f4fa;
+  --footer-contacts-text-color: rgba(255, 255, 255, 0.6);
+  --footer-secondary-test-color: rgba(255, 255, 255, 0.4);
+  --footer-bg-color: #2f303a;
+}
+
+body {
+  color: var(--primary-text-color);
+  /* background-color: var(--primary-bg-color); */
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+ul {
+  list-style: none;
+}
+.logo {
+  color: var(--accent-color);
+  font-family: Raleway, cursive;
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 1.2;
+}
+.logo-secondary-color {
+  color: var(--black-color);
+}
+.logo-secondary-color:hover {
+  color: var(--accent-color);
+}
+
+/* site nav */
+
+.site-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.site-nav .link {
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* auth nav */
+
+.auth-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.header-link {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
+}
+
+/* hero */
+
+.hero {
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+.hero-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+/* section */
+
+.section {
+}
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--title-text-color);
+}
+.bg-team {
+  background-color: var(--primary-bg-color);
+}
+.section-p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+.title {
+  color: var(--title-text-color);
+}
+.doing {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+}
+h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--title-text-color);
+}
+
+/* team */
+.section-team {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+/* portfolio */
+
+.portfolio {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+/* footer */
+footer {
+  font-style: normal;
+  color: var(--white-color);
+  background-color: var(--footer-bg-color);
+}
+
+.footer-logo {
+  text-decoration: none;
+  color: var(--accent-color);
+  font-size: 22px;
+  line-height: 1.2;
+  font-family: Raleway, cursive;
+}
+.footer-logo-secondary-color {
+  color: var(--white-color);
+}
+.footer-logo-secondary-color:hover {
+  color: var(--accent-color);
+}
+.footer-address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.footer-contacts-link {
+  text-decoration: none;
+  color: var(--footer-contacts-text-color);
+}
+.footer-contacts-link:hover,
+.footer-contacts-link:focus {
+  color: var(--accent-color);
+}
+.copyright {
+  color: var(--footer-secondary-test-color);
+  font-size: 12px;
+  line-height: 2;
+}
+
+.button {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.9;
+
+  font-family: inherit;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
