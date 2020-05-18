@@ -50,8 +50,8 @@ ul {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1230;
-  outline: 2px colid tomato;
+  width: 1200px;
+  outline: 2px solid tomato;
 }
 
 .logo {
@@ -88,20 +88,19 @@ ul {
   color: var(--accent-color);
 }
 
-/* auth nav */
-
-.auth-nav {
+/* contacts */
+.footer-contacts {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
 }
 
-.header-link {
+.header-contacts-link {
   color: var(--primary-text-color);
   text-decoration: none;
 }
-.header-link:hover,
-.header-link:focus {
+.header-contacts-link:hover,
+.header-contacts-link:focus {
   color: var(--accent-color);
 }
 
