@@ -45,12 +45,15 @@ body {
 
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  width: 1170px;
+  /* height: 1360px; */
   outline: 2px solid tomato;
 }
 
@@ -107,21 +110,19 @@ ul {
 /* hero */
 
 .hero {
+  text-align: center;
+
+  outline: 2px solid tomato;
 }
 
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 46;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
 
-  text-align: center;
   color: var(--title-text-color);
-}
-
-.hero-button {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
 }
 
 /* section */
@@ -129,16 +130,38 @@ ul {
 .section {
 }
 .section-title {
+  padding-top: 94px;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: var(--title-text-color);
 }
+
+.visuallyhidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .bg-team {
   background-color: var(--primary-bg-color);
 }
 .section-p {
+  margin-top: 0;
+  margin-bottom: 188px;
+
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
@@ -154,19 +177,41 @@ ul {
   text-align: center;
 }
 h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   color: var(--title-text-color);
 }
 
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
 /* team */
+.team {
+  padding-bottom: 94px;
+}
+.team-title {
+  padding-top: 94px;
+}
 .section-team {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
+.img-team {
+  margin-bottom: 30px;
+}
+.social_links {
+}
+
+/* clientes */
+.clientes
 
 /* portfolio */
 
@@ -217,12 +262,62 @@ footer {
   line-height: 2;
 }
 
+/* button */
+
 .button {
+  display: inline-block;
+  border-radius: 4px;
+
+  border: 1px solid transparent;
+
   font-weight: 900;
   font-size: 16px;
   line-height: 1.9;
+  text-align: center;
+  text-decoration: none;
 
   font-family: inherit;
+}
+
+.hero-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
   color: var(--white-color);
   background-color: var(--accent-color);
+
+  min-width: 200px;
+  border-radius: 4px;
+  padding: 10px 32px;
+  margin-bottom: 200px;
+}
+.hero-button:hover {
+  color: var(--title-text-color);
+  background-color: var(--primary-bg-color);
+}
+
+.benefits-button {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  color: var(--title-text-color);
+  background-color: var(--primary-bg-color);
+}
+.benefits-button:hover {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.clientes-button {
+  width: 170px;
+  height: 90px;
+  margin-bottom: 96px;
+
+  background-color: var(--white-color);
+  border: 1px solid var(--social-network-color);
+}
+.clientes-button:hover {
+  border: 1px solid var(--accent-color);
 }
