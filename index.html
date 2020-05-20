@@ -18,25 +18,26 @@
   <body>
     <!--Шапка сайта-->
     <header>
-      <div class="container">
+      <div class="container main-nav">
+        <a href="./index.html" class="logo">
+          Web <span class="logo-secondary-color">Studio</span></a
+        >
         <nav>
-          <a href="./index.html" class="logo">
-            Web <span class="logo-secondary-color">Studio</span></a
-          >
-
           <ul class="site-nav">
-            <li><a href="" class="link current">Студия</a></li>
-            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-            <li><a href="" class="link">Контакты</a></li>
+            <li class="item"><a href="" class="link current">Студия</a></li>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Портфолио</a>
+            </li>
+            <li class="item"><a href="" class="link">Контакты</a></li>
           </ul>
         </nav>
         <ul class="header-contacts">
-          <li>
+          <li class="header-link">
             <a class="header-contacts-link" href="mailto:info@devstudio.com">
               info@devstudio.com
             </a>
           </li>
-          <li>
+          <li class="header-link">
             <a class="header-contacts-link" href="tel:380961111111">
               +38 096 111 11 11
             </a>
@@ -58,7 +59,7 @@
       <section class="section">
         <div class="container">
           <h2 class="section-title visuallyhidden">Приемущества</h2>
-          <ul>
+          <ul class="benefits">
             <li>
               <button type="button" class="button benefits-button">
                 <img src="./images/benefits/antenna_1.svg" alt="антена" />
@@ -102,25 +103,25 @@
           </ul>
 
           <h2 class="section-title">Чем мы занимаемся</h2>
-          <ul>
+          <ul class="doing">
             <li>
-              <a href="" class="doing">
+              <a href="" class="img-doing">
                 <img src="./images/box/box_1.jpg" alt="ноутбук" width="380" />
                 <p>Десктопные приложения</p>
               </a>
             </li>
             <li>
-              <a href="" class="doing">
+              <a href="" class="img-doing">
                 <img src="./images/box/box_2.jpg" alt="смартфон" width="380" />
                 <p>Мобильные приложения</p>
               </a>
             </li>
             <li>
-              <a href="" class="doing">
+              <a href="" class="img-doing">
                 <img
                   src="./images/box/box_3.jpg"
                   alt="дизайн сайта"
-                  width="380"
+                  width="370"
                 />
                 <p>Дизайнерские решения</p>
               </a>
@@ -133,8 +134,8 @@
       <section class="section-team bg-team">
         <div class="container">
           <h2 class="section-title team-title">Наша команда</h2>
-          <ul>
-            <li class="team">
+          <ul class="team">
+            <li class="team-list">
               <img
                 class="img-team"
                 src="./images/our_team/John_Smith.jpg"
@@ -182,7 +183,7 @@
                 </li>
               </ul>
             </li>
-            <li class="team">
+            <li class="team-list">
               <img
                 class="img-team"
                 src="./images/our_team/Marta_Stewart.jpg"
@@ -230,7 +231,7 @@
                 </li>
               </ul>
             </li>
-            <li class="team">
+            <li class="team-list">
               <img
                 class="img-team"
                 src="./images/our_team/Robert_Jakis.jpg"
@@ -278,7 +279,7 @@
                 </li>
               </ul>
             </li>
-            <li class="team">
+            <li class="team-list">
               <img
                 class="img-team"
                 src="./images/our_team/Martin_Doe.jpg"

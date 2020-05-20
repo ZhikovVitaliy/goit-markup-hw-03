@@ -57,6 +57,22 @@ ul {
   outline: 2px solid tomato;
 }
 
+/* main-nav */
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* site nav */
+
+.site-nav {
+  display: flex;
+  margin-left: 85px;
+}
+
+/* logo */
+
 .logo {
   color: var(--accent-color);
   font-family: Raleway, cursive;
@@ -71,15 +87,29 @@ ul {
   color: var(--accent-color);
 }
 
-/* site nav */
+.site-nav .item {
+  background-color: tomato;
+  margin-right: 50px;
+}
+.site-nav .item:last-child {
+  margin-right: 0;
+}
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+}
+.header-contacts .header-link + .header-link {
+  margin-left: 30px;
+}
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
-.site-nav {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-}
 
-.site-nav .link {
   color: var(--title-text-color);
   text-decoration: none;
 }
@@ -130,9 +160,9 @@ ul {
 .section {
 }
 .section-title {
-  padding-top: 94px;
+  padding-top: 0;
   padding-bottom: 0;
-  margin-top: 0;
+  margin-top: 94px;
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -155,6 +185,13 @@ ul {
   overflow: hidden;
 }
 
+/* Benefits */
+
+.benefits {
+  display: flex;
+  justify-content: space-between;
+}
+
 .bg-team {
   background-color: var(--primary-bg-color);
 }
@@ -169,7 +206,15 @@ ul {
 .title {
   color: var(--title-text-color);
 }
+
+/* doing */
+
 .doing {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-doing {
   text-decoration: none;
   font-weight: 700;
   font-size: 14px;
@@ -192,11 +237,16 @@ p {
 }
 
 /* team */
+
 .team {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-list {
   padding-bottom: 94px;
 }
 .team-title {
-  padding-top: 94px;
 }
 .section-team {
   font-weight: 500;
