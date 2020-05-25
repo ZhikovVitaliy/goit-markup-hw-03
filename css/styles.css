@@ -1,3 +1,12 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 /* белый #FFFFFF */
 
 /* первичный фон #E5E5E5 */
@@ -49,6 +58,7 @@ ul {
   margin: 0;
 }
 
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -60,8 +70,6 @@ ul {
 }
 
 .container-border {
-  /* text-align: center; */
-
   border-top: 1px solid #ececec;
 }
 
@@ -177,7 +185,7 @@ ul {
   padding-top: 94px;
   padding-bottom: 94px;
 
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 /* section */
@@ -318,30 +326,62 @@ p {
 /* portfolio */
 
 .portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  /* align-content: flex-start */
-
-  background-color: teal;
+ /* background-color: teal; */
 
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
+.card-img {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
 .portfolio-card {
+  display: flex;
+  flex-wrap: wrap;
 }
 .portfolio-card > li {
-  width: 370px;
-  /* height: 404px; */
+  padding: 0;
+  margin-right: 25px;
+  margin-bottom: 30px;
 
-  background-color: tomato;
+  width: 370px
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
+}
+
+.portfolio-card > li:nth-child(3n) {
+  margin-right: 0;
+}
+.portfolio-card > li:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.portfolio-card-content {
+  padding: 20px 24px;
+
+  border: 1px solid #EEEEEE;
+  border-top: 0;
+  
+  box-sizing: border-box;
+  border-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .td-none {
+  display: block;
+  padding: 0;
+  margin: 0;
   text-decoration: none;
   text-align: left;
 }
+
 
 p {
   font-weight: normal;
@@ -411,14 +451,15 @@ footer {
   color: var(--accent-color);
 }
 
-.copyright-box {
-  padding-top: 18px;
-  padding-bottom: 21px;
-
+/* .copyright-box {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
+} */
 
 .copyright {
+  padding-top: 18px;
+  padding-bottom: 21px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
   text-align: center;
 
   color: var(--footer-secondary-test-color);
@@ -523,4 +564,7 @@ footer {
 .test {
   display: flex;
   flex-wrap: wrap;
+}
+.flex {
+  width: 300px;
 }
